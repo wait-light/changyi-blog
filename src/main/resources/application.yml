@@ -1,0 +1,43 @@
+server:
+  port: 8888
+spring:
+  profiles: prod
+  datasource:
+    # 配置数据源
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid连接池
+    url: jdbc:mysql://localhost:3306/changyi_blog?useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&autoReconnect=true&failOverReadOnly=false
+    username: changyi_blog
+    password: 3haed4fiyyLmBiLe
+
+#  servlet:
+#    multipart:
+#      max-file-size: -1
+#      max-request-size: -1
+###增加日志输出，方便定位问题
+logging:
+  level:
+    root : warn
+    top.changyix.blog: error
+  ###控制台输出格式
+  pattern:
+    console: '%p%m%n'
+mybatis-plus:
+  mapper-locations: classpath*:/top/changyix/blog/mapper/xml/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      ###逻辑未删除的值
+      logic-not-delete-value: 0
+      ###逻辑已删除的值
+      logic-delete-value: 1
+  ####扫描swagger注解
+  swagger:
+    base-package: top.changyix
+pageSetting:
+  pageSize: 6
+  bigPageSize: 15
+  smallPageSize: 5
+pureStringSize: 25
+debug: false
