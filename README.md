@@ -1,14 +1,14 @@
-# 个人博客系统
+# 个人博客系统-后端
 
-## 技术栈
+# 介绍
+
+学习spring boot的时候写的简陋的项目
+
+# 技术栈
 
 spring boot + spring security
 
-## 查看
-
-以前写的简陋的项目，一直没有完善。
-
-[在线查看](http://blog.adxd.top/) ps:服务器快过期了
+## 前端
 
 [前端项目地址](https://github.com/wait-light/changyi-blog-vue)
 
