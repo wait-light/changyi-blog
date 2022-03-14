@@ -27,8 +27,7 @@ public class Map implements Serializable {
 
     private static final long serialVersionUID=1L;
 
-
-    @TableField("`key`")
+    @TableId(value = "`key`",type = IdType.INPUT)
     private String key;
     @TableField("`values`")
     private String values;

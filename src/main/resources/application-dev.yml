@@ -4,11 +4,11 @@ spring:
   profiles: dev
   datasource:
     # 配置数据源
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     # 使用druid连接池
     url: jdbc:mysql://localhost:3306/changyi_blog?useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&autoReconnect=true&failOverReadOnly=false&useSSL=false
     username: root
-    password: 123456
+    password: root
 #  servlet:
 #    multipart:
 #      max-file-size: -1
